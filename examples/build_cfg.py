@@ -14,4 +14,4 @@ args = parser.parse_args()
 cfg_name = args.input_file.split('/')[-1]
 cfg_format = args.output_file.split('.')[-1]
 cfg = CFGBuilder().build_from_file(cfg_name, args.input_file)
-cfg.build_visual(args.output_file[:-(len(cfg_format)+1)], format=cfg_format, calls=True)
+cfg.build_visual(args.output_file[:-(len(cfg_format)+1)], format=cfg_format, calls=False)
